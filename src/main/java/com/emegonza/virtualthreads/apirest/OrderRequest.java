@@ -2,7 +2,7 @@ package com.emegonza.virtualthreads.apirest;
 
 import java.util.List;
 
-public record OrderUpdateRequest(
+public record OrderRequest(
         String status,
-        List<OrderDetails> items
+        List<OrderItems> items
 ) { }

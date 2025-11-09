@@ -1,4 +1,9 @@
 package com.emegonza.virtualthreads.apirest;
 
-public class OrderDetails {
-}
+import java.util.List;
+
+public record OrderDetails(
+        String orderId,
+        String status,
+        List<OrderItems> items
+) { }

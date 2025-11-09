@@ -1,6 +1,6 @@
 package com.emegonza.virtualthreads.apirest;
 
-public record OrderDetails(
+public record OrderItems(
         int quantity,
         String productId
 ) { }
