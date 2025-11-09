@@ -1,5 +1,6 @@
-package com.emegonza.virtualthreads.apirest;
+package com.emegonza.virtualthreads.apirest.service;
 
+import com.emegonza.virtualthreads.apirest.model.OrderDetails;
 import org.springframework.stereotype.Service;
 
 @Service

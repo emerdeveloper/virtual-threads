@@ -1,4 +1,4 @@
-package com.emegonza.virtualthreads.apirest;
+package com.emegonza.virtualthreads.apirest.model;
 
 import java.util.List;
 

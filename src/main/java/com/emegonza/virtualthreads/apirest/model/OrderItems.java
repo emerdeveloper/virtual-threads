@@ -1,4 +1,4 @@
-package com.emegonza.virtualthreads.apirest;
+package com.emegonza.virtualthreads.apirest.model;
 
 public record OrderItems(
         int quantity,

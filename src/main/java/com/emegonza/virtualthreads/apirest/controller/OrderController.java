@@ -1,5 +1,8 @@
-package com.emegonza.virtualthreads.apirest;
+package com.emegonza.virtualthreads.apirest.controller;
 
+import com.emegonza.virtualthreads.apirest.model.OrderDetails;
+import com.emegonza.virtualthreads.apirest.model.OrderRequest;
+import com.emegonza.virtualthreads.apirest.service.OrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;

@@ -1,4 +1,4 @@
-package com.emegonza.virtualthreads.apirest;
+package com.emegonza.virtualthreads.apirest.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
