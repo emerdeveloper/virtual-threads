@@ -4,10 +4,5 @@ import java.util.List;
 
 public record OrderUpdateRequest(
         String status,
-        List<OrderItems> items
-) { }
-
-record OrderItems(
-        int quantity,
-        String productId
+        List<OrderDetails> items
 ) { }
