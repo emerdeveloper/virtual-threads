@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        //mavenLocal()
+        //maven { url = '...' }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'virtual-threads'
