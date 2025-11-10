@@ -7,7 +7,8 @@
       </elementProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 12 × 3" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 12 × 3">
+        <stringProp name="TestPlan.comments">Cada hilo ejecuta 12 veces → 12 requests secuenciales</stringProp>
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">0</intProp>
         <longProp name="ThreadGroup.duration">1</longProp>
@@ -280,7 +281,8 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 6 × 3" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 6 × 3">
+        <stringProp name="TestPlan.comments">Cada hilo ejecuta 6 veces → 2 × 6 = 12 requests (2 en paralelo)</stringProp>
         <intProp name="ThreadGroup.num_threads">2</intProp>
         <intProp name="ThreadGroup.ramp_time">0</intProp>
         <longProp name="ThreadGroup.duration">1</longProp>
@@ -553,7 +555,8 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 12 solicitudes en paralelo" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 12 solicitudes en paralelo">
+        <stringProp name="TestPlan.comments">Cada hilo ejecuta 1 vez → 12 × 1 = 12 requests en paralelo</stringProp>
         <intProp name="ThreadGroup.num_threads">12</intProp>
         <intProp name="ThreadGroup.ramp_time">0</intProp>
         <longProp name="ThreadGroup.duration">1</longProp>
@@ -826,7 +829,8 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 12 cada 3 segundos" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - 12 cada 3 segundos">
+        <stringProp name="TestPlan.comments">Cada hilo ejecuta 3 veces → 24 × 3 = 72 requests (24 en paralelo)</stringProp>
         <intProp name="ThreadGroup.num_threads">24</intProp>
         <intProp name="ThreadGroup.ramp_time">0</intProp>
         <longProp name="ThreadGroup.duration">1</longProp>
@@ -1099,7 +1103,8 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - estres" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Platform Threads - estres">
+        <stringProp name="TestPlan.comments">Cada hilo ejecuta 1 vece → 1,200 × 1 = 1,200 requests</stringProp>
         <intProp name="ThreadGroup.num_threads">1200</intProp>
         <intProp name="ThreadGroup.ramp_time">4</intProp>
         <longProp name="ThreadGroup.duration">1</longProp>
@@ -1382,7 +1387,7 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Virtual Threads - synchronized" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Virtual Threads - synchronized Java 21">
         <stringProp name="TestPlan.comments">Cada hilo ejecuta 10 veces → 1200 × 10 = 12,000 requests</stringProp>
         <intProp name="ThreadGroup.num_threads">1200</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
@@ -1686,7 +1691,7 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Virtual Threads">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Virtual Threads - synchronized Java 24">
         <stringProp name="TestPlan.comments">Cada hilo ejecuta 10 veces → 1200 × 10 = 12,000 requests</stringProp>
         <intProp name="ThreadGroup.num_threads">1200</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
