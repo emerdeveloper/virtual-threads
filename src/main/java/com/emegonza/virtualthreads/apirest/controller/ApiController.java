@@ -19,6 +19,8 @@ public class ApiController {
 
     public ApiController(RestClient.Builder restClientBuilder) {
         restClient = restClientBuilder.baseUrl("https://postman-echo.com/").build();
+        // this work with local mock - using mockoon
+        //restClient = restClientBuilder.baseUrl("http://localhost:3003/").build();
     }
 
     @GetMapping(path = "/simulate-calls/{seconds}")

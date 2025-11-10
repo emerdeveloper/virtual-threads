@@ -1691,7 +1691,7 @@
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Virtual Threads - synchronized Java 24">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Virtual Threads - get orders">
         <stringProp name="TestPlan.comments">Cada hilo ejecuta 10 veces → 1200 × 10 = 12,000 requests</stringProp>
         <intProp name="ThreadGroup.num_threads">1200</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
