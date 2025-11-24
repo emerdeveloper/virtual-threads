@@ -6,6 +6,10 @@ Este proyecto demuestra cómo los **Virtual Threads** introducidos en Java 21 y 
 
 Tradicionalmente, Java ha utilizado **Platform Threads**, que son mapeados directamente a hilos del sistema operativo. Cada solicitud HTTP en un servidor web como Tomcat consume un hilo, lo que limita la escalabilidad: si el número de solicitudes concurrentes supera el número de hilos disponibles, el servidor se bloquea o degrada su rendimiento.
 
+![Threads](/docs/threads.png)
+
+![Web Request](/docs/web-request.png)
+
 Con la llegada de los **Virtual Threads** en Java 21, se introduce un modelo de concurrencia más ligero, donde cada tarea puede ejecutarse en un hilo virtual que no consume directamente recursos del sistema operativo. Esto permite manejar miles de solicitudes concurrentes sin saturar el sistema.
 
 > ⚠️ En Java 21, los Virtual Threads aún sufrían de *pinning* cuando se ejecutaban bloques `synchronized`, lo que impedía liberar el hilo físico. Este problema fue solucionado en Java 24, permitiendo una verdadera concurrencia sin bloqueo.
