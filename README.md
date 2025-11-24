@@ -47,10 +47,49 @@ La aplicación expone endpoints funcionales que pueden ser consumidos directamen
 
 - `@PostMapping("/{orderId}")`: Simula una operación sincronizada.
 - `@GetMapping("/{orderId}")`: Simula una operación bloqueante de base de datos (3 segundos de espera).
-
+- `@GetMapping("/api/simulate-calls/{seconds}")`: Simula una operación bloqueante parametrizando el tiempo del bloqueo `{seconds}`.
+  
 ## 📊 Pruebas de rendimiento (carpeta `deployment/`)
 
-Se realizaron pruebas con **JMeter** para simular distintos escenarios de concurrencia. A continuación se describen los más relevantes:
+Se realizaron pruebas con **JMeter** para simular distintos escenarios de concurrencia. 
+
+**Escenario 1:** Simular 12 solicitudes bloqueantes de 3 segundos, ejecutadas secuencialmente.
+* Thread Group:
+    - Number of Threads (users): 1
+    - Loop Count: 12
+    - Ramp-Up Period: 0
+    - Resultado esperado: ~36 segundos (12 × 3)
+
+    ![Scenario](/docs/scenario_1.png)
+
+**Escenario 2:** Simular 2 usuarios concurrentes enviando 6 solicitudes cada uno.
+* Thread Group:
+    - Number of Threads (users): 2
+    - Loop Count: 6
+    - Ramp-Up Period: 0
+    - Resultado esperado: ~18 segundos (6 × 3)
+
+  ![Scenario](/docs/scenario_2.png)
+
+**Escenario 3:** Simular 12 usuarios concurrentes enviando 1 solicitud cada uno.
+* Thread Group:
+    - Number of Threads (users): 12
+    - Loop Count: 1
+    - Ramp-Up Period: 0
+    - Resultado esperado: ~3 segundos (todas procesadas en paralelo)
+
+  ![Scenario](/docs/scenario_3.png)
+
+**Escenario 4:** Simular 24 usuarios concurrentes enviando 3 solicitudes cada uno.
+* Thread Group:
+    - Number of Threads (users): 24
+    - Loop Count: 3
+    - Ramp-Up Period: 0
+    - Resultado esperado: ~18 segundos (procesamiento en bloques de 12 cada 3 segundos)
+
+  ![Scenario](/docs/scenario_4.png)
+
+A continuación se describen los más relevantes:
 
 | Escenario | Descripción | Sin Virtual Threads (Platform Threads) | Java 21 (Virtual Threads) | Java 24 (Virtual Threads) |
 |-----------|-------------|----------------------------------------|----------------------------|----------------------------|
