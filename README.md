@@ -100,7 +100,23 @@ A continuación se describen los más relevantes:
 
 ## 📈 Resultados y gráficos
 
-> pendiente..
+**Escenario 5:** 
+* Thread Group:
+    - Number of Threads (users): 1,200
+    - Loop Count: 1
+    - Ramp-Up Period: 4
+
+
+* Resultados:
+    - Resumen de la prueba
+    ![Scenario](/docs/scenario_5_resume.png)
+    - Usuarios activos a lo largo del tiempo 
+    ![Scenario](/docs/scenario_5_active_users.png)
+    - Tiempos de respuesta a lo largo del tiempo
+    ![Scenario](/docs/scenario_5_response_time.png)
+    - TPS
+    ![Scenario](/docs/scenario_5_tps.png)
+  
 
 ## ⚙️ Configuración del servidor
 
