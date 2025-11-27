@@ -89,6 +89,8 @@ Se realizaron pruebas con **JMeter** para simular distintos escenarios de concur
 
   ![Scenario](/docs/scenario_4.png)
 
+[Diagramas editables aquí](/docs/v-t.excalidraw)
+
 A continuación se describen los más relevantes:
 
 | Escenario | Descripción | Sin Virtual Threads (Platform Threads) | Java 21 (Virtual Threads) | Java 24 (Virtual Threads) |
