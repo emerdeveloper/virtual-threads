@@ -116,7 +116,28 @@ A continuación se describen los más relevantes:
     ![Scenario](/docs/scenario_5_response_time.png)
     - TPS
     ![Scenario](/docs/scenario_5_tps.png)
-  
+
+      
+**Escenario 6:**
+* Thread Group:
+    - Number of Threads (users): 1,200
+    - Loop Count: 10
+    - Ramp-Up Period: 10
+
+
+* Resultados:
+  - Resumen de la prueba
+    ![Scenario](/docs/scenario_6_resume.png)
+  - Resumen Java 21 - Duración 1:44 min
+    ![Scenario](/docs/scenario_6_java21.png)
+  - Resumen Java 24 - Duración 10 seg
+    ![Scenario](/docs/scenario_6_java24.png)
+  - Usuarios activos a lo largo del tiempo
+    ![Scenario](/docs/scenario_6_active_users.png)
+  - Tiempos de respuesta a lo largo del tiempo
+    ![Scenario](/docs/scenario_6_response_time.png)
+  - TPS
+    ![Scenario](/docs/scenario_6_tps.png)
 
 ## ⚙️ Configuración del servidor
 
